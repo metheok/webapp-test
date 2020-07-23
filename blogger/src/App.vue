@@ -1,32 +1,39 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/"> <img class="icon-img" src="./assets/icons/svg/001-home.svg" alt=""> </router-link> 
+      <router-link to="/"><img class="icon-img" src="./assets/icons/svg/002-app.svg" alt=""></router-link>
+      <router-link to="/"><img class="icon-img" src="./assets/icons/svg/003-calendar.svg" alt=""></router-link>
+      <router-link to=""><img class="icon-img" src="./assets/icons/svg/004-shop.svg" alt=""></router-link>
+      <router-link to=""><img class="icon-img" src="./assets/icons/svg/005-settings.svg" alt=""></router-link>
+      <router-link to=""><img class="icon-img set" src="./assets/icons/svg/006-back-arrow.svg" alt=""></router-link>
+      
     </div>
     <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
 }
-
 #nav {
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  background-color: #383135;
+  width: 75px;
+  margin: 20px 20px;
+  border-radius: 23px;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.icon-img {
+  width: 18px;
+  height: 18px;
+  margin: 20px 28px;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.icon-img.set {
+  margin-top: 150px;
 }
 </style>
