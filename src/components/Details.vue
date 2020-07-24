@@ -91,7 +91,7 @@ button:active {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 600px;
   height: 500px;
   background-color: #f7f7f7;
   padding: 30px;
