@@ -2,7 +2,8 @@
   <div id="app">
     <div id="appli">
       <NavBar />
-      <router-view />
+
+      <router-view class="feed" ></router-view>
       <Details />
     </div>
     <div class="top-section-container">
@@ -27,7 +28,7 @@
       <div class="profile-pic-container">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Jay-Z_%40_Shawn_%27Jay-Z%27_Carter_Foundation_Carnival_%28crop_2%29.jpg/220px-Jay-Z_%40_Shawn_%27Jay-Z%27_Carter_Foundation_Carnival_%28crop_2%29.jpg"
-          alt="John pic"
+          alt="John Doe"
         />
       </div>
     </div>
@@ -60,6 +61,9 @@ h2,
 h3,
 h4 {
   margin: 0;
+}
+.feed {
+  margin-left: 100px;
 }
 
 /*top section container */
