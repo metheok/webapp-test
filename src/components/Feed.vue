@@ -174,6 +174,7 @@ export default {
 }
 .top > .search {
   border: hidden;
+  outline: none;
   background-color: #f7f7f7;
   margin: 10px;
   font-weight: 550;
@@ -213,6 +214,10 @@ export default {
   border-radius: 8px;
 }
 
+.intro .button:hover,
+.intro .button:focus {
+  background: #000;
+}
 /*trending blogs*/
 
 .trending > h3,

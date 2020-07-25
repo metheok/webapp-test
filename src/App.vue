@@ -17,7 +17,7 @@
       <div class="language-sel-container">
         <select name="" id="dropdown">
           <option value="EN">EN</option>
-          <option value="ESP">SPE</option>
+          <option value="ESP">ESP</option>
           <option value="POR">POR</option>
         </select>
       </div>
@@ -50,6 +50,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
 body {
+  width: 100px;
   padding: 0;
   margin: 0;
   background-color: white;

@@ -130,6 +130,7 @@ select {
   padding: 10px 15px;
   margin: 0 5px;
   border: none;
+  outline: none;
   border-radius: 6px;
   background: rgb(230, 229, 229);
 }

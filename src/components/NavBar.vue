@@ -31,12 +31,11 @@ export default {};
 <style scoped>
 #nav {
   display: flex;
-
   flex-direction: column;
   position: fixed;
   background-color: #383135;
   width: 75px;
-  height: 80%;
+  height: 90%;
   margin: 20px 20px;
   border-radius: 23px;
 }
