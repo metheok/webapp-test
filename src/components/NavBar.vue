@@ -35,6 +35,7 @@ export default {};
   position: sticky;
   background-color: #383135;
   width: 75px;
+  height: 100%;
   margin: 20px 20px;
   border-radius: 23px;
 }

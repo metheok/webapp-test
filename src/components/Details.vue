@@ -1,67 +1,102 @@
 <template>
   <div class="container">
-    <div class="card">
-      <div class="card-left">
-        <div class="icon-wrapper" style="background-color: #fee7cc;">
-          <span class="material-icons" style="font-size: 24px;">
-            article
+    <div class="details">
+      <div class="card">
+        <div class="card-left">
+          <div class="icon-wrapper" style="background-color: #fee7cc;">
+            <span class="material-icons" style="font-size: 24px;">
+              article
+            </span>
+          </div>
+          <div class="content-wrapper">
+            <div class="title">Articles Posted</div>
+            <div class="subtitle">80</div>
+          </div>
+        </div>
+        <div class="card-right">
+          <span class="material-icons">
+            keyboard_arrow_right
           </span>
         </div>
-        <div class="content-wrapper">
-          <div class="title">Articles Posted</div>
-          <div class="subtitle">80</div>
+      </div>
+      <div class="card">
+        <div class="card-left">
+          <div class="icon-wrapper" style="background-color: #d8ddfa;">
+            <span class="material-icons" style="font-size: 24px;">
+              article
+            </span>
+          </div>
+          <div class="content-wrapper">
+            <div class="title">Claps This Week</div>
+            <div class="subtitle">1.5K</div>
+          </div>
         </div>
-      </div>
-      <div class="card-right">
-        <span class="material-icons">
-          keyboard_arrow_right
-        </span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-left">
-        <div class="icon-wrapper" style="background-color: #d8ddfa;">
-          <span class="material-icons" style="font-size: 24px;">
-            article
+        <div class="card-right">
+          <span class="material-icons">
+            keyboard_arrow_right
           </span>
         </div>
-        <div class="content-wrapper">
-          <div class="title">Claps This Week</div>
-          <div class="subtitle">1.5K</div>
+      </div>
+      <div class="card">
+        <div class="card-left">
+          <div class="icon-wrapper" style="background-color: #e5e5e5;">
+            <span class="material-icons" style="font-size: 24px;">
+              group
+            </span>
+          </div>
+          <div class="content-wrapper">
+            <div class="title">New Followers This Week</div>
+            <div class="subtitle">972</div>
+          </div>
         </div>
-      </div>
-      <div class="card-right">
-        <span class="material-icons">
-          keyboard_arrow_right
-        </span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-left">
-        <div class="icon-wrapper" style="background-color: #e5e5e5;">
-          <span class="material-icons" style="font-size: 24px;">
-            group
+        <div class="card-right">
+          <span class="material-icons">
+            keyboard_arrow_right
           </span>
         </div>
-        <div class="content-wrapper">
-          <div class="title">New Followers This Week</div>
-          <div class="subtitle">972</div>
+      </div>
+
+      <div class="followers">
+        <div class="followers-wrapper">
+          <div class="follow-heading">
+            <h4 class="follow-head">Followers</h4>
+          </div>
+          <div class="view-all-div"><p class="view-all">View All</p></div>
+
+          <a class="followers" href="#">
+            <img
+              class="follower-img"
+              src="https://i.pinimg.com/236x/8d/f7/ab/8df7abc755a433879cc8197aca798a0e.jpg"
+            />
+          </a>
+          <a class="followers" href="#">
+            <img
+              class="follower-img"
+              src="https://i.pinimg.com/236x/2d/0a/c5/2d0ac5f5a8380ba790cb88845ea4484c.jpg"
+            />
+          </a>
+          <a class="followers" href="#">
+            <img
+              class="follower-img"
+              src="https://i.pinimg.com/236x/d6/f8/14/d6f814dfb3a5d372fa8eab3558f35047.jpg"
+            />
+          </a>
+          <a class="followers" href="#">
+            <img
+              class="follower-img"
+              src="https://i.pinimg.com/236x/74/f5/a0/74f5a0511beb735dae7350f1526ff215.jpg"
+          /></a>
         </div>
       </div>
-      <div class="card-right">
-        <span class="material-icons">
-          keyboard_arrow_right
-        </span>
+      <div class="banner">
+        <span class="description"
+          >Buy <span class="emphasis">Pro Account</span> to Explore Premium
+          Features</span
+        >
+        <button class="button">
+          Purchase Now
+        </button>
       </div>
-    </div>
-    <div class="banner">
-      <span class="description"
-        >Buy <span class="emphasis">Pro Account</span> to Explore Premium
-        Features</span
-      >
-      <button class="button">
-        Purchase Now
-      </button>
     </div>
   </div>
 </template>
@@ -88,14 +123,16 @@ button:active {
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 600px;
-  height: 500px;
+}
+
+.details {
   background-color: #f7f7f7;
   padding: 30px;
   border-radius: 25px;
+  margin-top: 50px;
 }
 
 .card {
@@ -188,4 +225,81 @@ button:active {
   padding: 10px 15px;
   border-radius: 8px;
 }
+
+/*for account section */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 217x;
+  border: none;
+  outline: none;
+  color: grey;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+a:hover .dropdown:hover .dropbtn {
+  background-color: grey;
+  border-radius: 50%;
+  color: white;
+  transform: scale(1.05);
+  transition-duration: 1s;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+  transition-duration: 1s;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.user-name-container {
+  height: inherit;
+  width: 90%;
+}
+.main-user-name {
+  position: relative;
+  top: -5px;
+  color: grey;
+}
+.main-profile-pic {
+  right: 20px;
+  top: 10px;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.profile-pic-container {
+  height: inherit;
+  float: right;
+}
+.user-handle {
+  position: absolute;
+  right: 80px;
+  top: 25px;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+/*followers cards*/
 </style>

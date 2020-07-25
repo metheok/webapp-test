@@ -56,33 +56,33 @@ export default {
     return {
       posts: [],
       filterStatus: "",
-      filterYear: "",
+      filterYear: ""
     };
   },
   mounted() {
     axios
       .get("https://my-json-server.typicode.com/orzel-bielik/test/posts")
-      .then((res) => {
+      .then(res => {
         this.posts = res.data;
         this.posts.forEach((element, index) => {
           this.posts[index].date = element.date.split("-", 1)[0];
         });
       })
-      .catch((err) => {
+      .catch(err => {
         console.log(err);
       });
   },
 
   computed: {
     filteredPosts: function() {
-      return this.posts.filter((post) => {
+      return this.posts.filter(post => {
         return (
           post.status.match(this.filterStatus) &&
           post.date.match(this.filterYear)
         );
       });
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -94,7 +94,6 @@ body {
 .main {
   margin: 30px auto;
   text-align: left;
-  width: 800px;
 }
 
 table {

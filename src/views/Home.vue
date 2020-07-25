@@ -1,8 +1,6 @@
 <template>
   <div class="home">
-    <Nav-Bar />
     <Feed />
-    <Details />
   </div>
 </template>
 
@@ -10,16 +8,12 @@
 // @ is an alias to /src
 
 import Feed from "@/components/Feed.vue";
-import Details from "@/components/Details.vue";
-import NavBar from "@/components/NavBar.vue";
 
 export default {
   name: "Home",
   components: {
-    Details,
-    Feed,
-    NavBar,
-  },
+    Feed
+  }
 };
 </script>
 <style scoped>

@@ -1,13 +1,53 @@
 <template>
   <div id="app">
-    <router-view />
+    <div id="top-account">
+      <NavBar />
+      <router-view />
+      <Details />
+    </div>
+    <div class="top-section-container">
+      <div class="notity-container">
+        <a href="#"
+          ><img
+            class="notify"
+            src="https://www.flaticon.com/premium-icon/icons/svg/3106/3106685.svg"
+        /></a>
+      </div>
+      <div class="language-sel-container">
+        <select name="" id="dropdown">
+          <option value="EN">EN</option>
+          <option value="ESP">SPE</option>
+          <option value="POR">POR</option>
+        </select>
+      </div>
+      <div class="user-name-container">
+        <h4>John Doe</h4>
+        <p>John Doe</p>
+      </div>
+      <div class="profile-pic-container">
+        <img
+          src="https://i.pinimg.com/236x/b9/44/07/b9440798bc0fccdc8dac3932b1537c05.jpg"
+          alt="prof. pic"
+        />
+      </div>
+    </div>
   </div>
 </template>
 <script>
 // @ is an alias to /src
+import NavBar from "@/components/NavBar.vue";
+import Details from "@/components/Details.vue";
+
+export default {
+  components: {
+    NavBar,
+    Details
+  }
+};
 </script>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
 body {
   padding: 0;
   margin: 0;
@@ -20,5 +60,68 @@ h2,
 h3,
 h4 {
   margin: 0;
+}
+
+/*top section container */
+#top-account {
+  display: flex;
+}
+
+.top-section-container {
+  height: 40px;
+  width: 300px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  top: 10px;
+  right: 1px;
+  margin: 5px 0;
+}
+.notify-container {
+  width: 20%;
+  float: left;
+  height: inherit;
+  margin: 2px 8px;
+}
+.notify {
+  float: left;
+  width: 30px;
+  height: inherit;
+}
+.notify:hover {
+  background-color: #e0e2e4;
+  transform: scale(1.2);
+  border-radius: 50%;
+}
+.language-sel-container {
+  height: inherit;
+  margin: 4px 8px;
+  width: 30px;
+}
+.dropdown {
+}
+
+.user-name-container {
+  margin: 15px 4px 0px 45px;
+  color: gray;
+}
+.user-name-container h4,
+.user-name-container p {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.profile-pic-container {
+  height: inherit;
+  margin: 0 0;
+  padding: 0;
+}
+.profile-pic-container img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: black;
 }
 </style>
