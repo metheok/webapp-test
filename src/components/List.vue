@@ -102,7 +102,7 @@ table {
   box-shadow: inset 0 1px 0 #fff;
   font-size: 12px;
   line-height: 22px;
-  width: 100%;
+  width: 95%;
   table-layout: auto;
 }
 

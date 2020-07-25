@@ -35,7 +35,7 @@ export default {};
   position: fixed;
   background-color: #383135;
   width: 75px;
-  height: 90%;
+  height: 500px;
   margin: 20px 20px;
   border-radius: 23px;
 }
@@ -46,5 +46,13 @@ export default {};
 }
 .icon-img.set {
   margin-top: 150px;
+}
+@media (max-width: 868px) {
+  #nav {
+    flex-direction: row;
+    height: 75px;
+    width: 90%;
+    top: 0px;
+  }
 }
 </style>

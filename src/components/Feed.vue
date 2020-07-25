@@ -270,7 +270,7 @@ export default {
 }
 .clap {
   float: right;
-  width: %;
+
   height: 50%;
 }
 
@@ -283,5 +283,26 @@ export default {
 .clapper-number {
   display: inline;
   float: right;
+}
+@media (max-width: 768px) {
+  .feed {
+    margin-left: 0px;
+  }
+  #appli {
+    display: block;
+  }
+  .top {
+    width: 40%;
+  }
+}
+@media (max-width: 600px) {
+  .top {
+    position: relative;
+    top: 60px;
+    width: 60%;
+  }
+  .intro {
+    margin-top: 80px;
+  }
 }
 </style>

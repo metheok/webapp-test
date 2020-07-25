@@ -2,8 +2,7 @@
   <div id="app">
     <div id="appli">
       <NavBar />
-
-      <router-view class="feed" ></router-view>
+      <router-view class="feed"></router-view>
       <Details />
     </div>
     <div class="top-section-container">
@@ -50,7 +49,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
 body {
-  width: 100px;
+  width: 100%;
   padding: 0;
   margin: 0;
   background-color: white;
@@ -63,6 +62,7 @@ h3,
 h4 {
   margin: 0;
 }
+
 .feed {
   margin-left: 100px;
 }
@@ -87,12 +87,13 @@ h4 {
   width: 20%;
   float: left;
   height: inherit;
-  margin: 2px 8px;
+  margin: 0 8px;
 }
 .notify {
   float: left;
   width: 30px;
   height: inherit;
+  margin-top: 16px;
 }
 .notify:hover {
   background-color: #e0e2e4;
@@ -101,8 +102,9 @@ h4 {
 }
 .language-sel-container {
   height: inherit;
-  margin: 4px 8px;
+  margin: 0 8px;
   width: 30px;
+  margin-top: 20px;
 }
 .dropdown {
 }
@@ -128,5 +130,17 @@ h4 {
   width: 50px;
   border-radius: 50%;
   border-color: black;
+}
+@media (max-width: 868px) {
+  .feed {
+    margin-left: 0px;
+  }
+  #appli {
+    display: block;
+    margin-top: 100px;
+  }
+  .top-section-container {
+    top: 110px;
+  }
 }
 </style>

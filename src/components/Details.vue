@@ -110,7 +110,7 @@ export default {};
   display: flex;
   flex-direction: column;
   margin: 25px 0;
-  width: 600px;
+  flex: 1;
 }
 
 .details {
