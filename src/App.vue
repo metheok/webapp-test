@@ -70,6 +70,7 @@ h4 {
 /*top section container */
 #appli {
   display: flex;
+  flex-direction: row;
 }
 
 .top-section-container {

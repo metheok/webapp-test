@@ -1,6 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import More from "../views/More.vue";
+import Settings from "../views/Settings.vue";
+import Shop from "../views/Shop.vue";
+import Calendar from "../views/Calendar.vue";
 
 Vue.use(VueRouter);
 
@@ -10,14 +14,36 @@ const routes = [{
     component: Home
   },
   {
-    path: "",
-    name: "",
+    path: "/shop",
+    name: "Shop",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => { //import(/* webpackChunkName: "about" */ "../views/About.vue")
-    }
-
+    component: Shop
+  },
+  {
+    path: "/more",
+    name: "More",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: More
+  },
+  {
+    path: "/settings",
+    name: "Settings",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: Settings
+  },
+  {
+    path: "/calendar",
+    name: "Calendar",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: Calendar
   }
 ];
 
