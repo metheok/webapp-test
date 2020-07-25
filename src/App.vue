@@ -15,4 +15,10 @@ body {
   color: #383135;
   font-family: "Lato", sans-serif;
 }
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
 </style>
