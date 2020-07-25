@@ -23,7 +23,7 @@
         <div class="card-left">
           <div class="icon-wrapper" style="background-color: #d8ddfa;">
             <span class="material-icons" style="font-size: 24px;">
-              article
+              thumb_up_alt
             </span>
           </div>
           <div class="content-wrapper">
