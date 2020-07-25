@@ -57,12 +57,13 @@
       </div>
 
       <div class="followers">
-        <div class="followers-wrapper">
+        
           <div class="follow-heading">
             <h4 class="follow-head">Followers</h4>
+            <p class="view-all">View All</p>
           </div>
-          <div class="view-all-div"><p class="view-all">View All</p></div>
 
+          <div class="followers-wrapper">
           <a class="followers" href="#">
             <img
               class="follower-img"
@@ -107,24 +108,11 @@ export default {};
 
 <style scoped>
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-button {
-  all: unset;
-}
-
-button:hover,
-button:focus {
-  background: #000;
-}
-
-button:active {
-  transform: scale(0.99);
-}
 
 .container {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 25px 0;
   width: 600px;
 }
 
@@ -225,81 +213,30 @@ button:active {
   padding: 10px 15px;
   border-radius: 8px;
 }
+button {
+  all: unset;
+}
 
-/*for account section */
-.dropdown {
-  float: left;
-  overflow: hidden;
+button:hover,
+button:focus {
+  background: #000;
 }
-.dropdown .dropbtn {
-  font-size: 217x;
-  border: none;
-  outline: none;
-  color: grey;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-a:hover .dropdown:hover .dropbtn {
-  background-color: grey;
-  border-radius: 50%;
-  color: white;
-  transform: scale(1.05);
-  transition-duration: 1s;
-}
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.dropdown-content a:hover {
-  background-color: #ddd;
-  transform: scale(1.05);
-  transition-duration: 1s;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.user-name-container {
-  height: inherit;
-  width: 90%;
-}
-.main-user-name {
-  position: relative;
-  top: -5px;
-  color: grey;
-}
-.main-profile-pic {
-  right: 20px;
-  top: 10px;
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-.profile-pic-container {
-  height: inherit;
-  float: right;
-}
-.user-handle {
-  position: absolute;
-  right: 80px;
-  top: 25px;
-  font-size: 13px;
-  font-weight: lighter;
+
+button:active {
+  transform: scale(0.99);
 }
 
 /*followers cards*/
+
+.follow-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.followers-wrapper {
+  display: flex;
+}
+.followers img {
+  height: 90px;
+  width: 90px;
+}
 </style>

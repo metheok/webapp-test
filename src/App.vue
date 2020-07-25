@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="top-account">
+    <div id="appli">
       <NavBar />
       <router-view />
       <Details />
@@ -26,8 +26,8 @@
       </div>
       <div class="profile-pic-container">
         <img
-          src="https://i.pinimg.com/236x/b9/44/07/b9440798bc0fccdc8dac3932b1537c05.jpg"
-          alt="prof. pic"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Jay-Z_%40_Shawn_%27Jay-Z%27_Carter_Foundation_Carnival_%28crop_2%29.jpg/220px-Jay-Z_%40_Shawn_%27Jay-Z%27_Carter_Foundation_Carnival_%28crop_2%29.jpg"
+          alt="John pic"
         />
       </div>
     </div>
@@ -63,7 +63,7 @@ h4 {
 }
 
 /*top section container */
-#top-account {
+#appli {
   display: flex;
 }
 
