@@ -107,6 +107,8 @@ h4 {
   margin-top: 20px;
 }
 .dropdown {
+  outline: none;
+  border-color: none;
 }
 
 .user-name-container {

@@ -109,7 +109,7 @@ export default {};
 .container {
   display: flex;
   flex-direction: column;
-  margin: 25px 0;
+  margin: 25px 20px;
   flex: 1;
 }
 
@@ -256,5 +256,11 @@ a > p {
   font-size: 10px;
   color: whitesmoke;
   bottom: 35px;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 790px;
+    margin: 25px 15px;
+  }
 }
 </style>

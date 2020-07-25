@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="top">
-      <h4>List of Blogs</h4>
+      <h3>List of Blogs</h3>
       <p>Filter By:</p>
       <div class="sta-class">
         <select id="status" v-model="filterStatus" name="Status">
@@ -108,6 +108,7 @@ table {
 
 .top {
   display: flex;
+  margin: 5px 0;
 }
 
 th {
@@ -127,7 +128,7 @@ td {
 }
 
 select {
-  padding: 10px 15px;
+  padding: 10px 5px;
   margin: 0 5px;
   border: none;
   outline: none;
@@ -139,9 +140,9 @@ select {
 .date-class {
   align-self: center;
 }
-.top h4 {
-  margin-left: 20px;
-  margin-right: 52%;
+.top h3 {
+  margin-left: 18px;
+  margin-right: 50%;
   align-self: flex-start;
 }
 .top p {

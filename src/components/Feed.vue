@@ -28,8 +28,11 @@
     </div>
 
     <div class="trending">
-      <h3>Trending Blogs</h3>
-      <p>View all</p>
+      <div class="trend-header">
+        <h3>Trending Blogs</h3>
+        <p>View all</p>
+      </div>
+
       <div class="row">
         <div class="column">
           <div class="card">
@@ -155,7 +158,7 @@ export default {
 
 <style scoped>
 .main {
-  width: 800px;
+  width: 790px;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -220,18 +223,22 @@ export default {
 }
 /*trending blogs*/
 
-.trending > h3,
-.trending > p {
-  display: inline;
+.trend-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.trending > p {
-  float: right;
+.trend-header > h3 {
+  margin-left: 18px;
+}
+.trend-header > p {
+  margin-right: 20px;
 }
 
 .trending .row {
   display: flex;
   flex-direction: row;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .card p {
