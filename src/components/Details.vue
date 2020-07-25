@@ -64,29 +64,25 @@
           </div>
 
           <div class="followers-wrapper">
-          <a class="followers" href="#">
-            <img
-              class="follower-img"
-              src="https://i.pinimg.com/236x/8d/f7/ab/8df7abc755a433879cc8197aca798a0e.jpg"
-            />
-          </a>
+
           <a class="followers" href="#">
             <img
               class="follower-img"
               src="https://i.pinimg.com/236x/2d/0a/c5/2d0ac5f5a8380ba790cb88845ea4484c.jpg"
-            />
+            /> <p>James May</p>
           </a>
           <a class="followers" href="#">
             <img
               class="follower-img"
               src="https://i.pinimg.com/236x/d6/f8/14/d6f814dfb3a5d372fa8eab3558f35047.jpg"
-            />
+            /> <p>Paul Mcartney</p>
           </a>
           <a class="followers" href="#">
             <img
               class="follower-img"
               src="https://i.pinimg.com/236x/74/f5/a0/74f5a0511beb735dae7350f1526ff215.jpg"
-          /></a>
+          />  <p>Jhonny cash</p>
+          </a>
         </div>
       </div>
       <div class="banner">
@@ -235,8 +231,23 @@ button:active {
 .followers-wrapper {
   display: flex;
 }
+.followers {
+  margin: 4px 8px;
+}
 .followers img {
   height: 90px;
   width: 90px;
+  border-radius: 15px;
+}
+.followers a {
+  text-decoration: none;
+}
+a > p {
+  position: relative;
+  text-align: center;
+  background-color: #a0949b;
+  font-size: 10px;
+  color: whitesmoke;
+  bottom: 35px;
 }
 </style>
